@@ -1,4 +1,4 @@
-/*global describe:false, __dirname:false, afterEach:false, it:false, xit:false, xdescribe:false*/
+/*global describe:false, __dirname:false, afterEach:false, it:false*/
 /*jshint -W030*/
 'use strict';
 
