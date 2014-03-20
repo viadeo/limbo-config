@@ -1,0 +1,46 @@
+{
+  "name": "tetra-config",
+  "version": "0.0.1",
+  "description": "Configuration validation and management for Locomotive projects",
+  "homepage": "https://github.com/viadeo/tetra-config",
+  "private": true,
+  "keywords": [
+    "node.js",
+    "express",
+    "locomotive",
+    "tetra",
+    "viadeo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/viadeo/tetra-config.git"
+  },
+  "author": {
+    "name": "viadeo",
+    "url": "http://www.viadeo.com/"
+  },
+  "bugs": {
+    "url": "http://github.com/viadeo/tetra-config/issues"
+  },
+  "main": "./lib",
+  "scripts": {
+    "istanbul": "istanbul cover _mocha test/**/*.test.js"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "convict": "~0.4.2",
+    "debug": "~0.7.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "load-grunt-config": "~0.7.2",
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-mocha-test": "~0.9.4",
+    "grunt-jsbeautifier": "~0.2.6",
+    "chai": "~1.9.0",
+    "mocha": "~1.18.0"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}

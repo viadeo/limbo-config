@@ -1,0 +1,10 @@
+.git*
+test/
+tasks/
+coverage/
+Gruntfile.js
+.jshintrc
+.jsbeautifyrc
+.editorconfig
+.gitignore
+.DS_Store

@@ -1,0 +1,5 @@
+{
+  "forbidden_routes": ["forbidden", "prod_folder"],
+  "external_components": "dev_components",
+  "prod_config": true
+}

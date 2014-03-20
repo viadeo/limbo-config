@@ -1,0 +1,4 @@
+{
+  "forbidden_routes": "not an array",
+  "external_components": "bower_components"
+}

@@ -1,0 +1,5 @@
+{
+  "forbidden_routes": ["forbidden", "dev_folder"],
+  "external_components": "bower_components",
+  "dev_config": true
+}

@@ -1,0 +1,26 @@
+{
+  "_scripts_dir_name": {
+    "doc": "The name of a directory that holds scripts",
+    "default": "scripts"
+  },
+  "_styles_dir_name": {
+    "doc": "The name of a directory that holds styles",
+    "default": "styles"
+  },
+  "_partials_dir_name": {
+    "doc": "The name of a directory that contains partials",
+    "default": "_partials"
+  },
+  "_helpers_dir_name": {
+    "doc": "The name of a directory that contains helpers",
+    "default": "_helpers"
+  },
+  "_translations_dir_name": {
+    "doc": "The name of a directory that contains localization JSON",
+    "default": "lang"
+  },
+  "_translation_root_file_name": {
+    "doc": "The basename of file that are treated as the root file for localization purposes",
+    "default": "main"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "forbidden_routes": ["forbidden"],
+  "external_components": "bower_components"
+}

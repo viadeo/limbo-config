@@ -1,0 +1,6 @@
+{
+  "_root_file_name": {
+    "doc": "The basename of files that are treated as the root files for localization and components",
+    "default": "override-main"
+  }
+}

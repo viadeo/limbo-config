@@ -1,0 +1,34 @@
+{
+  "_config": {
+    "doc": "Location of the application config",
+    "default": "config"
+  },
+  "_controllers": {
+    "doc": "Where the locomotive controllers are stored, relative to project root",
+    "default": "app/controllers"
+  },
+  "_views": {
+    "doc": "Where the locomotive views are stored, relative to project root",
+    "default": "app/views"
+  },
+  "_assets": {
+    "doc": "Location of application assets, relative to project root",
+    "default": "app/assets"
+  },
+  "_components": {
+    "doc": "Where local components are located, relative to project root",
+    "default": "app/assets/scripts/components"
+  },
+  "_external_components": {
+    "doc": "Where external components are located, relative to project root",
+    "default": "bower_components"
+  },
+  "_staging": {
+    "doc": "The folder that the build can use to create temporary files, and where webroot is. Relative to project root.",
+    "default": ".tmp"
+  },
+  "_webroot": {
+    "doc": "The folder that acts as the webroot",
+    "default": ".public"
+  }
+}
