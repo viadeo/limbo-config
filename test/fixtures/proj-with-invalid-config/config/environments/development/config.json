@@ -1,5 +1,8 @@
 {
-  "forbidden_routes": ["fonts", "images", "locales", "translations", "lang", "scripts", "styles", "dev_folder"],
-  "external_components": "dev_components",
+  "tetra": {
+    "forbidden_routes": ["fonts", "images", "locales", "translations", "lang", "scripts", "styles", "dev_folder"],
+    "external_components": "dev_components"
+  },
+
   "dev_config": true
 }

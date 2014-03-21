@@ -26,13 +26,13 @@ describe('app configuration', function() {
       config = require('../lib');
 
       // Test a few standard configs
-      expect(config._controllers).to.be.a('string');
-      expect(config._assets).to.be.a('string');
+      expect(config.tetra.template_ext).to.be.a('string');
+      expect(config.tetra.forbidden_routes).to.be.an('array');
 
       // Test overridden config
-      expect(config.forbidden_routes.length).to.equal(2);
-      expect(config.forbidden_routes).to.include('forbidden');
-      expect(config.forbidden_routes).to.include('dev_folder');
+      expect(config.tetra.forbidden_routes.length).to.equal(2);
+      expect(config.tetra.forbidden_routes).to.include('forbidden');
+      expect(config.tetra.forbidden_routes).to.include('dev_folder');
 
       // Check that custom config keys were set in the development environment
       expect(config.dev_config).to.equal(true);
@@ -47,13 +47,13 @@ describe('app configuration', function() {
       config = require('../lib');
 
       // Test a few standard configs
-      expect(config._controllers).to.be.a('string');
-      expect(config._assets).to.be.a('string');
+      expect(config.tetra.external_components).to.be.a('string');
+      expect(config.tetra.external_components_list).to.be.an('array');
 
       // Test overridden config
-      expect(config.forbidden_routes.length).to.equal(2);
-      expect(config.forbidden_routes).to.include('forbidden');
-      expect(config.forbidden_routes).to.include('prod_folder');
+      expect(config.tetra.forbidden_routes.length).to.equal(2);
+      expect(config.tetra.forbidden_routes).to.include('forbidden');
+      expect(config.tetra.forbidden_routes).to.include('prod_folder');
 
       // Check a config set in the development environment
       expect(config.dev_config).to.be.an('undefined');
@@ -68,12 +68,12 @@ describe('app configuration', function() {
       config = require('../lib');
 
       // Test a few standard configs
-      expect(config._controllers).to.be.a('string');
-      expect(config._assets).to.be.a('string');
+      expect(config.tetra.external_components_glob).to.be.a('string');
+      expect(config.tetra.external_components_list).to.be.an('array');
 
       // Test config not overridden
-      expect(config.forbidden_routes.length).to.equal(1);
-      expect(config.forbidden_routes).to.include('forbidden');
+      expect(config.tetra.forbidden_routes.length).to.equal(1);
+      expect(config.tetra.forbidden_routes).to.include('forbidden');
 
       // Check a config set in the development environment
       expect(config.dev_config).to.be.an('undefined');
@@ -87,11 +87,11 @@ describe('app configuration', function() {
       config = require('../lib');
 
       // Test a few standard configs
-      expect(config._controllers).to.be.a('string');
-      expect(config._assets).to.be.a('string');
+      expect(config.tetra.template_ext).to.be.a('string');
+      expect(config.tetra.forbidden_routes).to.be.an('array');
 
       // Test config not overridden
-      expect(config.forbidden_routes.length).to.equal(0);
+      expect(config.tetra.forbidden_routes.length).to.equal(0);
 
       // Check a config set in the development environment
       expect(config.dev_config).to.be.an('undefined');
@@ -105,31 +105,11 @@ describe('app configuration', function() {
       config = require('../lib');
 
       // Test a few standard configs
-      expect(config._root_file_name).to.equal('override-main');
+      expect(config.external_components_glob).to.equal('override-main');
     });
   });
 
   describe('error states', function() {
-
-    it('should throw an exception if app doesn\'t exist exist', function() {
-      process.cwd = function() {
-        return path.resolve(__dirname, 'fixtures/proj-non-existent');
-      };
-
-      expect(function() {
-        require('../lib');
-      }).to.throw(ConfigurationError);
-    });
-
-    it('should throw an exception if required app directories do not exist', function() {
-      process.cwd = function() {
-        return path.resolve(__dirname, 'fixtures/proj-with-missing-dirs');
-      };
-
-      expect(function() {
-        require('../lib');
-      }).to.throw(ConfigurationError);
-    });
 
     it('should throw an exception if the configuration is invalid', function() {
       process.cwd = function() {

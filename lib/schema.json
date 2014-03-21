@@ -1,0 +1,24 @@
+{
+  "tetra": {
+    "forbidden_routes": {
+      "doc": "A list of routes that may not be created (either as an identical or partial match).",
+      "default": []
+    },
+    "template_ext": {
+      "doc": "The templating file extension",
+      "default": ".hbs"
+    },
+    "external_components": {
+      "doc": "Where external components are located, relative to project root. If .bowerrc is present, this setting is ignored",
+      "default": "bower_components"
+    },
+    "external_components_glob": {
+      "doc": "A glob used to discover components in the external components directory",
+      "default": "viadeo-comp-.*"
+    },
+    "external_components_list": {
+      "doc": "A list of named external components. If non-empty, it will be used in preference to the glob discovery",
+      "default": []
+    }
+  }
+}

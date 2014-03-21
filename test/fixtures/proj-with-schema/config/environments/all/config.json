@@ -1,4 +1,6 @@
 {
-  "forbidden_routes": ["forbidden"],
-  "external_components": "bower_components"
+  "tetra": {
+    "forbidden_routes": ["forbidden"],
+    "external_components": "bower_components"
+  }
 }
