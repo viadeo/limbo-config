@@ -1,6 +1,6 @@
 {
   "name": "tetra-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Configuration validation and management for Locomotive projects",
   "homepage": "https://github.com/viadeo/tetra-config",
   "private": true,
