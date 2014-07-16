@@ -13,13 +13,13 @@ Setup, manage and validate configuration files for Locomotive/Express applicatio
     - environments
         - all
             - config.json
-            - all.js
+            - index.js
         - development (optional)
             - config.json
-            - all.js
+            - index.js
         - production (optional)
             - config.json
-            - all.js
+            - index.js
 ```
 
 Only `config/environments/all` is a required directory - everything else is optional.
@@ -29,7 +29,7 @@ Only `config/environments/all` is a required directory - everything else is opti
 When you load `tetra-config` for the first time, the following steps are performed
 
 1. We fetch the `tetra-config` schema file, which sets up some default properties required
-by all `tetra.io` projects. These will be namespaced under `config.tetra`
+by all `tetra` projects. These will be namespaced under `config.tetra`
 
 2. We look for a project schema in `config/convict/schema.json`. If present, we merge this into the
 `tetra-config` schema, with the application schema taking precedence
