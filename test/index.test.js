@@ -20,6 +20,7 @@ describe('app configuration', function() {
   describe('loading and validation of application config', function() {
 
     it('should load an existing configuration, in development mode', function() {
+      process.env.NODE_ENV = 'development';
       process.cwd = function() {
         return path.resolve(__dirname, 'fixtures/proj');
       };
