@@ -1,5 +1,7 @@
 # limbo-config
 
+[![Circle CI](https://circleci.com/gh/viadeo/limbo-config.svg?style=svg)](https://circleci.com/gh/viadeo/limbo-config)
+
 Setup, manage and validate configuration files for Locomotive/Express applications.
 
 ## Project Setup
