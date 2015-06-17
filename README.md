@@ -1,10 +1,10 @@
-# tetra-config
+# limbo-config
 
 Setup, manage and validate configuration files for Locomotive/Express applications.
 
 ## Project Setup
 
-`tetra-config` expects the following project structure
+`limbo-config` expects the following project structure
 
 ```
 - config
@@ -26,13 +26,13 @@ Only `config/environments/all` is a required directory - everything else is opti
 
 ## How it works
 
-When you load `tetra-config` for the first time, the following steps are performed
+When you load `limbo-config` for the first time, the following steps are performed
 
-1. We fetch the `tetra-config` schema file, which sets up some default properties required
+1. We fetch the `limbo-config` schema file, which sets up some default properties required
 by all `tetra` projects. These will be namespaced under `config.tetra`
 
 2. We look for a project schema in `config/convict/schema.json`. If present, we merge this into the
-`tetra-config` schema, with the application schema taking precedence
+`limbo-config` schema, with the application schema taking precedence
 
 3. We initialise a Convict configuration object, using our merged schema file. Properties present in the schema
 will be created on the object, and initialised with their default value
@@ -52,7 +52,7 @@ the default value set in step 1
 validation fails, an error is thrown
 
 8. If the validation passes, the Convict configuration is transformed into a plain object that is returned from
-the original `require('tetra-config')` call.
+the original `require('limbo-config')` call.
 
 ## Usage
 
@@ -60,7 +60,7 @@ Simply include the library in your `package.json`. You can then access your conf
 anywhere in your application like so
 
 ```javascript
-var config = require('tetra-config');
+var config = require('limbo-config');
 
 console.log(config); // Outputs the config object
 ```
