@@ -1,8 +1,8 @@
 {
-  "name": "limbo-config",
+  "name": "node-limbo-config",
   "version": "0.0.3",
   "description": "Configuration validation and management for Locomotive projects",
-  "homepage": "https://github.com/viadeo/limbo-config",
+  "homepage": "https://github.com/viadeo/node-limbo-config",
   "private": true,
   "keywords": [
     "node.js",
@@ -15,14 +15,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/viadeo/limbo-config.git"
+    "url": "git://github.com/viadeo/node-limbo-config.git"
   },
   "author": {
     "name": "viadeo",
     "url": "http://www.viadeo.com/"
   },
   "bugs": {
-    "url": "http://github.com/viadeo/limbo-config/issues"
+    "url": "http://github.com/viadeo/node-limbo-config/issues"
   },
   "main": "./lib",
   "scripts": {
